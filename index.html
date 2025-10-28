@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vettek - Shortlist talent others overlook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="Assets/Images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- gsap CDN link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+              <img class="logo-image" src="Assets/Images/logo_dark.svg" alt="vettek logo">
+              <ul class="nav-links">
+                <li><a href="#solutions">方案</a></li>
+                <li><a href="#vision">願景</a></li>
+            </ul>
+            </div>
+            <div class="auth-buttons">
+                <a href="https://www.vettek.co/beta-access" class="btn btn-primary">免費企業估值</a>
+            </div>
+            <button class="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+              <img src="Assets/Images/menu.svg" alt="menu" class="hamburger-icon">
+            </button>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+          <ul class="mobile-nav-links">
+            <li><a href="#solutions">方案</a></li>
+            <li><a href="#vision">願景</a></li>
+            <li><a href="https://www.vettek.co/beta-access" class="btn btn-primary" style="color: #ffffff;">免費企業估值</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="border-radius: 100px 0 100px 0;">
+        <div class="container">
+            <div class="hero-images">
+                <picture>
+                    <source srcset="Assets/Images/hero_m.png" media="(max-width: 768px)">
+                    <img src="Assets/Images/hero_d.png" alt="Hero Image" class="hero-image">
+                </picture>
+            </div>
+            <h1 id="hero-title">讓企業交棒與轉型更順利</h1>
+            <p>中小企業 M&A 買賣撮合平台</p>
+            <a href="https://www.vettek.co/beta-access" class="btn btn-primary" style="display: inline-flex; align-items: center; line-height: 0;">
+              免費企業估值
+              <div class="">
+                  <img src="Assets/Images/icon_arrow.svg" alt="arrow icon" class="arrow-icon">
+              </div>
+            </a>
+            <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3tfHKxIkVxXlVBDFWVfXVVOscVYM3-SVhQckFXUYxYkw2C4XtUcsOUCHhFDA5eBPDlzSTjR-_p?gv=true" class="btn btn-underline">聯繫我們</a>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases" id="cases" style="border-radius: 0 100px 0 100px;">
+        <div class="container">
+            <h2>企業需求</h2>
+            <div class="use-cases-grid">
+                <div class="use-case">
+                  <div class="use-case-image">
+                      <img src="Assets/Images/recruiters.png" alt="recruiters" class="use-case-icon">
+                  </div>
+                    <h2>企業傳承</h2>
+                    <p class="use-case-title">讓多年心血有人接手，安心交棒下一代。</p>
+                    <p>台灣許多企業主面臨接班難題，我們協助您找到理念相符、具備經營能力的承接者。透過專業審查與撮合機制，確保您的事業價值得以延續，傳承無縫接軌。</p>
+                </div>
+                <div class="use-case">
+                  <div class="use-case-image">
+                      <img src="Assets/Images/managers.png" alt="managers" class="use-case-icon">
+                  </div>
+                    <h2>策略擴張</h2>
+                    <p class="use-case-title">透過併購加速成長，開啟事業新佈局。</p>
+                    <p>無論是想拓展市場、取得技術或整合供應鏈，我們的平台幫助您快速找到具潛力的標的。以資料分析與專業評估為基礎，協助企業精準擴張、提升競爭力。</p>
+                </div>
+                <div class="use-case">
+                  <div class="use-case-image">
+                      <img src="Assets/Images/founders.png" alt="founders" class="use-case-icon">
+                  </div>
+                    <h2>退出變現</h2>
+                    <p class="use-case-title">順利退出，將多年經營轉化為實際成果。</p>
+                    <p>對於想退休、轉型或尋求新機會的企業主，我們協助評估企業價值、媒合買方，讓退出不只是結束，而是收穫與新起點。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Predictive Hiring Section -->
+    <section class="predictive-hiring" style="border-radius: 100px 0 100px 0; text-align: center;">
+        <div class="container">
+            <h1>三個步驟完成企業交易</h1>
+            <div class="steps-grid">
+                <div class="step" style="border-radius: 100px 0 100px 0;">
+                    <div class="step-image">
+                        <img src="Assets/Images/screening.svg" alt="screening" class="use-case-icon">
+                    </div>
+                    <span class="step-chip">STEP 1</span>
+                    <h2>初步審查與估值</h2>
+                    <div>
+                        <p>掌握企業真實價值，精準定位市場。</p>
+                    </div>
+                </div>
+                <div class="step" style="border-radius: 0 100px 0 100px;">
+                    <div class="step-image">
+                        <img src="Assets/Images/interview.svg" alt="interview" class="use-case-icon">
+                    </div>
+                    <span class="step-chip">STEP 2</span>
+                    <h2>即時配對與協商</h2>
+                    <p>用數據與經驗撮合最合適的交易夥伴。</p>
+                </div>
+                <div class="step" style="border-radius: 100px 0 100px 0;">
+                    <div class="step-image">
+                        <img src="Assets/Images/prediction.svg" alt="prediction" class="use-case-icon">
+                    </div>
+                    <span class="step-chip">STEP 3</span>
+                    <h2>盡職調查與結案</h2>
+                    <p>嚴謹審核，確保交易安全與雙贏。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interview Section -->
+    <section id="solutions" class="interview-section" style="border-radius: 0 100px 0 0;">
+        <div class="container">
+            <div>
+                <h1>交易流程</h1>
+                <p>透明、高效、專業的 M&A 撮合機制</p>
+            </div>
+          <div class="interview-btn">
+            <a href="#" class="btn btn-primary btn-icon">
+                <div class="">
+                    <img src="Assets/Images/screening.svg" alt="arrow icon" class="interview-icon">
+                </div>
+                初步審查與估值
+            </a>
+            <a href="#" class="btn btn-primary btn-icon">
+                <div class="">
+                    <img src="Assets/Images/interview.svg" alt="arrow icon" class="interview-icon">
+                </div>
+                即時配對與協商
+            </a>
+            <a href="#" class="btn btn-primary btn-icon">
+                <div class="">
+                    <img src="Assets/Images/prediction.svg" alt="arrow icon" class="interview-icon">
+                </div>
+                盡職調查與結案
+            </a>
+          </div>
+            <div class="interview-content screening">
+                <div class="dashboard-mockup">
+                    <img src="Assets/Images/case_screening.png" alt="" class="solutions-image">
+                </div>
+                <div class="interview-text">
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-box">
+                                <div class="stat-line"></div>
+                                <div>
+                                    <p class="stat-description">由專業顧問協助蒐集企業營運與財務資料，進行初步審查與估值分析。讓賣方了解合理售價區間，買方掌握投資潛力，為後續談判建立透明基礎。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="interview-content interview">
+                <div class="dashboard-mockup">
+                    <img src="Assets/Images/case_interview.png" alt="" class="solutions-image">
+                </div>
+                <div class="interview-text">
+                    <div class="stats">
+                        <div class="stat">
+                          <div class="stat-box">
+                              <div class="stat-line"></div>
+                              <div>
+                                  <p class="stat-description">透過內部資料庫與配對系統，快速尋找潛在買家與賣家。由專屬顧問協助雙方初步接觸、意向洽談與條件協商，加速交易進程並維持資訊保密。</p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="interview-content prediction">
+                <div class="dashboard-mockup">
+                    <img src="Assets/Images/case_prediction.png" alt="" class="solutions-image">
+                </div>
+                <div class="interview-text">
+                    <div class="stats">
+                      <div class="stat">
+                          <div class="stat-box">
+                              <div class="stat-line"></div>
+                              <div>
+                                  <p class="stat-description">當雙方達成初步共識後，專業團隊協助進行財務、法務與營運的盡職調查。確認企業真實狀況後，簽訂正式合約並完成交割，確保交易順利落地。</p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhancement Section -->
+    <section class="enhancement" style="border-radius: 0 0 100px 0;">
+        <div class="container">
+            <div class="enhancement-content">
+                <div class="">
+                    <img src="Assets/Images/background_deco.png" alt="" class="enhancement-image">
+                </div>
+                <div>
+                    <h1 style="line-height:1.2;padding-bottom: 1.5rem;">最安心的<br><span class="enhancement-heiglight">企業交易夥伴</span></h1>
+                    <ul class="enhancement-features">
+                        <li>
+                          <h3>估值智能化</h3>
+                          <p>導入數據分析與產業洞見，評估企業合理價值與市場定位。</p>
+                        </li>
+                        <li>
+                          <h3>配對系統化</h3>
+                          <p>結合產業資料庫與人工專業審核，將被動等待轉為主動搓合。</p>
+                        </li>
+                        <li>
+                          <h3>團隊專業性</h3>
+                          <p>顧問團隊全程陪跑，確保每筆交易合法合規且具長期價值。</p>
+                        </li>
+                        <li>
+                          <h3>交易保密性</h3>
+                          <p>匿名撮合與分階段資訊揭露機制，保護企業機密與品牌聲譽。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions" style="border-radius: 0 100px 0 100px;">
+        <div class="container">
+            <h1 style="line-height: 1; padding-bottom: 3rem;">適用於各業種的方案</h1>
+            <div class="solutions-content">
+              <div class="">
+                <a href="#" class="btn btn-primary btn-icon" style="margin-bottom: 1rem;">
+                    <div class="">
+                        <img src="Assets/Images/business.svg" alt="arrow icon" class="interview-icon">
+                    </div>
+                    賣方案例
+                </a>
+                <a href="#" class="btn btn-primary btn-icon" style="margin-bottom: 1rem;">
+                    <div class="">
+                        <img src="Assets/Images/candidate.svg" alt="arrow icon" class="interview-icon">
+                    </div>
+                    買方案例
+                </a>
+              </div>
+              <div class="solutions-grid businesses">
+                  <div class="solution">
+                    <div class="stat-line"></div>
+                    <div>
+                        <h3>營造業</h3>
+                        <p>針對建案規模、承包範圍與企業資產特性，提供量身撮合方案。</p>
+                    </div>
+                  </div>
+                  <div class="solution">
+                    <div class="stat-line"></div>
+                    <div>
+                        <h3>資訊科技業</h3>
+                        <p>幫助科技公司尋找合適併購標的或投資者，加速技術或用戶基礎擴張。</p>
+                    </div>
+                  </div>
+                  <div class="solution">
+                    <div class="stat-line"></div>
+                    <div>
+                        <h3>製造業</h3>
+                        <p>協助製造型企業整合或出售業務，提升產能利用率與品牌價值。</p>
+                    </div>
+                  </div>
+                  <div class="solution">
+                    <div class="stat-line"></div>
+                    <div>
+                        <h3>服務業</h3>
+                        <p>協助服務型企業完成策略併購或業務出售，提升經營效率與市場影響力。</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="solutions-grid candidates">
+                <div class="solution">
+                  <div class="stat-line"></div>
+                  <div>
+                      <h3>建設集團</h3>
+                      <p>透過併購營造業縮短進場時間，取得工程資質與人脈。</p>
+                  </div>
+                </div>
+                <div class="solution">
+                  <div class="stat-line"></div>
+                  <div>
+                      <h3>傳產企業</h3>
+                      <p>透過併購軟體技術公司速補齊技術短版，達成數位轉型。</p>
+                  </div>
+                </div>
+                <div class="solution">
+                  <div class="stat-line"></div>
+                  <div>
+                      <h3>代工企業</h3>
+                      <p>透過併購原料供應商提升議價能力，確保價格與品質穩定。</p>
+                  </div>
+                </div>
+                <div class="solution">
+                  <div class="stat-line"></div>
+                  <div>
+                      <h3>連鎖品牌</h3>
+                      <p>透過併購服務業整合客戶資料，達成市場擴張與人才佈局。</p>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Vision Section -->
+    <section class="mission-vision" id="vision" >
+        <div class="container">
+                <div class="">
+                    <img class="mission-vision-image" src="Assets/Images/koru_light.svg" alt="koru">
+                </div>
+            <div class="mission-vision-content">
+                <div>
+                    <h2>我們的願景</h2>
+                    <p>成為企業併購仲介業智能化的數位轉型先驅。</p>
+                </div>
+                <div>
+                    <h2>我們的使命</h2>
+                    <p>打造智能化併購仲介平台，結合顧問專業與數據分析，提升企業併購撮合的效率與成功率。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" style="border-radius: 0 100px 0 100px;">
+        <div class="container">
+            <h2>立即探索您的企業 M&A 可能性</h2>
+            <p>聯繫我們，描述您企業的需求，我們幫助您找到最合適的買家或投資者。</p>
+            <a href="#" class="btn btn-primary">企業需求</a>
+            <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3tfHKxIkVxXlVBDFWVfXVVOscVYM3-SVhQckFXUYxYkw2C4XtUcsOUCHhFDA5eBPDlzSTjR-_p?gv=true" class="btn btn btn-underline">聯繫我們</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+          <div class="logo">
+            <img class="logo-image" src="Assets/Images/logo_light.svg" alt="vettek logo">
+          </div>
+          <p>|</p>
+          <p>讓企業交棒與轉型更順利</p>
+      </div>
+        <div class="container">
+            <p>&copy; 2025 卓聘資訊股份有限公司 保留所有權利</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
